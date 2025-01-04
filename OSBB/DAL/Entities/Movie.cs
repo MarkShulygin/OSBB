@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    internal class Movie
+    public class Movie
     {
+      public int MovieId { get; set; }
+      public string Title { get; set; }
+      public string Description { get; set; }
+      public DateTime ReleaseDate { get; set; }
+      public string Genre { get; set; }
+      public string Director { get; set; }
+      public double Rating { get; set; }
     }
+
 }

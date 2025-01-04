@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    internal class MovieSession
+    public class MovieSession
     {
+        public int MovieSessionId { get; set; }
+        public int MovieId { get; set; }
+        public Movie Movie { get; set; }
+        public DateTime SessionTime { get; set; }
+        public int HallNumber { get; set; }
     }
 }
